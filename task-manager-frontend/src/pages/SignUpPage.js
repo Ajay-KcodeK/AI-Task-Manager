@@ -40,6 +40,7 @@ const SignUpPage = () => {
 
     try {
       const response = await registerUser(formData); // API call
+      console.log(response);
       setSuccess('Registration successful! Redirecting to login...');
       setTimeout(() => navigate('/login'), 2000);
     } catch (err) {

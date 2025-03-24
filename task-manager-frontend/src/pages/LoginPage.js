@@ -15,7 +15,6 @@ const LoginPage = () => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({ email: "", password: "" });
   const [error, setError] = useState("");
-
   const handleChange = async (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -23,7 +22,8 @@ const LoginPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
-
+    console.error(error);
+    
     try {
       const response = await loginUser(formData.email, formData.password);
       const { token, userId, role } = response.data;
