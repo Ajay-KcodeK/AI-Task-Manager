@@ -1,0 +1,20 @@
+{
+  "name": "AI Task Manager",
+  "short_name": "AI Tasks",
+  "icons": [
+    {
+      "src": "%PUBLIC_URL%/ai_task_manager_logo.ico",
+      "type": "image/ico",
+      "sizes": "192x192"
+    },
+    {
+      "src": "%PUBLIC_URL%/ai_task_manager_logo.ico",
+      "type": "image/ico",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
